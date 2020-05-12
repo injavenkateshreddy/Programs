@@ -15,6 +15,7 @@ class carinvetory:
         self.model = " "
         self.color = " "
         self.year = 0
+        self.mileage=0
 
 
     def addvehicle(self):
@@ -22,9 +23,10 @@ class carinvetory:
         self.make = input("Enter make: ")
         self.model = input("Enter model: ")
         self.color = input("Enter color: ")
+        self.mileage=int(input("Enter mileage:"))
 
     def __str__(self):
-        return('%d %s %s Color: %s ' %( self.year, self.make, self.model, self. color))
+        return('%d %s %s Color: %s Mileage:%d' %( self.year, self.make, self.model, self. color,self.mileage))
 
 vehiclelist = []
 
